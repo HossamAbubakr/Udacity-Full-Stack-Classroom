@@ -4,7 +4,7 @@ import leads from '../../Utils/_DATA';
 
 const leads_routes = express.Router();
 
-leads_routes.get('/leads', (req, res) => {
+leads_routes.get('/', (req, res) => {
   const name = req.query.name as string;
   const imgLocation = path.resolve('./') + `/assets/${name}.jpg`;
   const lead = leads.includes(name);
@@ -16,10 +16,12 @@ leads_routes.get('/leads', (req, res) => {
   }
   // If the name doesn't exist in the array return and end function
   if (lead === false) {
-    res
+    return res
       .status(404)
       .send('Resource not found, this session lead does not exist!');
   }
   // Otherwise return the lead's avatar
   res.sendFile(imgLocation);
 });
+
+export default leads_routes;
