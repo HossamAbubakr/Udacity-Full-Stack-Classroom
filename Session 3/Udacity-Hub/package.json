@@ -9,7 +9,7 @@
     "dev": "nodemon src/index.ts",
     "lint": "eslint src/*.ts",
     "lint:f": "eslint src/*.ts --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc && jasmine"
   },
   "keywords": [],
   "author": "",
