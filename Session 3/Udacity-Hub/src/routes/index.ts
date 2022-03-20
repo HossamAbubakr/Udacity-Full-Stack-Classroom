@@ -1,9 +1,9 @@
-import express from 'express';
+import { Router, Request, Response } from 'express';
 import leads_routes from './api/leads';
 
-const routes = express.Router();
+const routes = Router();
 
-routes.get('/', (req, res) => {
+routes.get('/', (_req: Request, res: Response) => {
   res.send('Welcome to the Udacity Hub API');
 });
 

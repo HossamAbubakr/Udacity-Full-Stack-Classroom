@@ -1,10 +1,10 @@
-import express from 'express';
+import { Router, Request, Response } from 'express';
 import path from 'path';
 import leads from '../../Utils/_DATA';
 
-const leads_routes = express.Router();
+const leads_routes = Router();
 
-leads_routes.get('/', (req, res) => {
+leads_routes.get('/', (req: Request, res: Response) => {
   const name = req.query.name as string;
   const imgLocation = path.resolve('./') + `/assets/${name}.jpg`;
   const lead = leads.includes(name);
