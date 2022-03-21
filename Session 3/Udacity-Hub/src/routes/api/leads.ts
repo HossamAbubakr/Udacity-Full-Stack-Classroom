@@ -1,6 +1,7 @@
 import { Router, Request, Response } from 'express';
 import path from 'path';
 import leads from '../../Utils/_DATA';
+import { existsSync } from "fs"
 
 const leads_routes = Router();
 
@@ -19,6 +20,12 @@ leads_routes.get('/', (req: Request, res: Response) => {
     return res
       .status(404)
       .send('Resource not found, this session lead does not exist!');
+  }
+  // If the name exists in the array but the photo doesn't exist return and end function
+  if(existsSync(imgLocation) === false){
+    return res
+    .status(404)
+    .send('Resource not found, this session lead does not have a photo!');
   }
   // Otherwise return the lead's avatar
   res.sendFile(imgLocation);
