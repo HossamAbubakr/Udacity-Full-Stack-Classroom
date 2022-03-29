@@ -26,3 +26,9 @@
 
     /* Create a one to many relationship between the session_leads and students tables */
     ALTER TABLE students ADD COLUMN sl_id INTEGER REFERENCES session_leads(id);
+
+    /* Insert some data into the session_leads table */
+    INSERT INTO session_leads (name) VALUES ('Hossam Abubakr');
+
+    /* Insert some data into the students table */
+    INSERT INTO students (name, sl_id) VALUES ('Ahmed Ali', 1);
