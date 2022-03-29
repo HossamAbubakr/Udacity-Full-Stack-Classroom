@@ -11,3 +11,15 @@
 
     /* Connect to the new database */
     \c udacity_hub;
+
+    /* Create the session leads table */
+    CREATE TABLE session_leads (
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(100) NOT NULL
+    );
+
+    /* Create the student table */
+    CREATE TABLE students (
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(100) NOT NULL
+    );
