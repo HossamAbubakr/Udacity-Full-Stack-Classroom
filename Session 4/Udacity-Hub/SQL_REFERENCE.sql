@@ -23,3 +23,6 @@
         id SERIAL PRIMARY KEY,
         name VARCHAR(100) NOT NULL
     );
+
+    /* Create a one to many relationship between the session_leads and students tables */
+    ALTER TABLE students ADD COLUMN sl_id INTEGER REFERENCES session_leads(id);
