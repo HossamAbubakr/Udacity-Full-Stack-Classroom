@@ -1,9 +1,9 @@
 {
   "dev": {
-    "user": "postgres",
-    "password": "postgres",
-    "host": "127.0.0.1",
-    "database": "udacity_hub",
+    "user": { "ENV": "DB_USER" },
+    "password": { "ENV": "DB_PASSWORD" },
+    "host": { "ENV": "DB_HOST" },
+    "database": { "ENV": "DB_NAME" },
     "driver": "pg"
   }
 }
