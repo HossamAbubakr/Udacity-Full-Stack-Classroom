@@ -19,4 +19,18 @@ export class LeadModel {
       );
     }
   }
+
+  async show(id: number): Promise<Lead> {
+    try {
+      const connection = await client.connect();
+      const sql = 'SELECT * FROM session_leads WHERE id=($1)';
+      const result = await connection.query(sql, [id]);
+      connection.release();
+      return result.rows[0];
+    } catch (error) {
+      throw new Error(
+        `Failed to get the session lead with the following error: ${error}`
+      );
+    }
+  }
 }
