@@ -35,4 +35,19 @@ export class SessionModel {
       );
     }
   }
+
+  async create(ss: Session): Promise<Session> {
+    try {
+      const connection = await client.connect();
+      const sql =
+        'INSERT INTO sessions (date, title, sl_id) VALUES($1, $2, $3) RETURNING *';
+      const result = await connection.query(sql, [ss.date, ss.title, ss.sl_id]);
+      connection.release();
+      return result.rows[0];
+    } catch (error) {
+      throw new Error(
+        `Failed to add the session with the following error: ${error}`
+      );
+    }
+  }
 }
