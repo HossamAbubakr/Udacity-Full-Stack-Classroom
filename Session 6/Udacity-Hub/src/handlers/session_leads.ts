@@ -11,8 +11,19 @@ const index = async (req: Request, res: Response) => {
   }
 };
 
+const show = async (req: Request, res: Response) => {
+  try {
+    const id = Number(req.params.id);
+    const lead = await sessionLeads.show(id);
+    res.send(lead);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
 const leads_routes = (app: express.Application) => {
   app.get('/leads', index);
+  app.get('/leads/:id', show);
 };
 
 export default leads_routes;
