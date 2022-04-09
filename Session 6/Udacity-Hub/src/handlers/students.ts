@@ -1,4 +1,4 @@
-import { StudentsModel } from '../models/students';
+import { Student, StudentsModel } from '../models/students';
 import express, { Request, Response } from 'express';
 const students = new StudentsModel();
 
@@ -31,10 +31,22 @@ const create = async (req: Request, res: Response) => {
   }
 };
 
+const update = async (req: Request, res: Response) => {
+  try {
+    const { id, name } = req.body;
+    const student: Student = { id, name };
+    const updatedUser = await students.update(student);
+    res.send(updatedUser);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
 const students_routes = (app: express.Application) => {
   app.get('/students', index);
   app.get('/students/:id', show);
   app.post('/students', create);
+  app.put('/students', update);
 };
 
 export default students_routes;
