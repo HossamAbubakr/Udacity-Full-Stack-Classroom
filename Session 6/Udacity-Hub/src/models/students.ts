@@ -32,4 +32,17 @@ export class StudentsModel {
       );
     }
   }
+  async create(name: string): Promise<Student> {
+    try {
+      const connection = await client.connect();
+      const sql = 'INSERT INTO students (name) VALUES($1) RETURNING *';
+      const result = await connection.query(sql, [name]);
+      connection.release();
+      return result.rows[0];
+    } catch (error) {
+      throw new Error(
+        `Failed to add the student with the following error: ${error}`
+      );
+    }
+  }
 }
