@@ -54,12 +54,23 @@ const destroy = async (req: Request, res: Response) => {
   }
 };
 
+const addStudent = async (req: Request, res: Response) => {
+  try {
+    const sessionId = Number(req.params.id);
+    const studentId = req.body.student_id;
+    const session = await sessions.addStudent(studentId, sessionId);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
 const sessions_routes = (app: express.Application) => {
   app.get('/sessions', index);
   app.get('/sessions/:id', show);
   app.post('/sessions', create);
   app.put('/sessions', update);
   app.delete('/sessions', destroy);
+  app.post('/sessions/:id/student', addStudent);
 };
 
 export default sessions_routes;
