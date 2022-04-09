@@ -42,11 +42,22 @@ const update = async (req: Request, res: Response) => {
   }
 };
 
+const destroy = async (req: Request, res: Response) => {
+  try {
+    const id = req.body.id;
+    const deletedLead = await sessionLeads.delete(id);
+    res.send(deletedLead);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
 const leads_routes = (app: express.Application) => {
   app.get('/leads', index);
   app.get('/leads/:id', show);
   app.post('/leads', create);
   app.put('/leads', update);
+  app.delete('/leads', destroy);
 };
 
 export default leads_routes;
