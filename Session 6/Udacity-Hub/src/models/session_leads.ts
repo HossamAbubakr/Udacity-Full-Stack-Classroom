@@ -47,4 +47,19 @@ export class LeadModel {
       );
     }
   }
+
+  async update(sl: Lead): Promise<Lead> {
+    try {
+      const connection = await client.connect();
+      const sql =
+        'UPDATE session_leads SET name=($1) WHERE id=($2) RETURNING *';
+      const result = await connection.query(sql, [sl.name, sl.id]);
+      connection.release();
+      return result.rows[0];
+    } catch (error) {
+      throw new Error(
+        `Failed to update session lead with the following error: ${error}`
+      );
+    }
+  }
 }
