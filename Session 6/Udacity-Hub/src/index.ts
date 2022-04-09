@@ -1,5 +1,7 @@
 import express from 'express';
 import leads_routes from './handlers/session_leads';
+import students_routes from './handlers/students';
+import sessions_routes from './handlers/sessions';
 
 const app = express();
 const port = 3000;
@@ -11,6 +13,8 @@ app.get('/', async (_req, res) => {
 });
 
 leads_routes(app);
+students_routes(app);
+sessions_routes(app);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
