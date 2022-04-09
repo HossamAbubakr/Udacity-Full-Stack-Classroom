@@ -1,4 +1,4 @@
-import { LeadModel } from '../models/session_leads';
+import { Lead, LeadModel } from '../models/session_leads';
 import express, { Request, Response } from 'express';
 const sessionLeads = new LeadModel();
 
@@ -31,10 +31,22 @@ const create = async (req: Request, res: Response) => {
   }
 };
 
+const update = async (req: Request, res: Response) => {
+  try {
+    const { id, name } = req.body;
+    const lead: Lead = { id, name };
+    const updatedLead = await sessionLeads.update(lead);
+    res.send(updatedLead);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
 const leads_routes = (app: express.Application) => {
   app.get('/leads', index);
   app.get('/leads/:id', show);
   app.post('/leads', create);
+  app.put('/leads', update);
 };
 
 export default leads_routes;
