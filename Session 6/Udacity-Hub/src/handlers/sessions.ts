@@ -32,10 +32,22 @@ const create = async (req: Request, res: Response) => {
   }
 };
 
+const update = async (req: Request, res: Response) => {
+  try {
+    const { id, date, title, sl_id } = req.body;
+    const session: Session = { id, date, title, sl_id };
+    const updatedSession = await sessions.update(session);
+    res.send(updatedSession);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
 const sessions_routes = (app: express.Application) => {
   app.get('/sessions', index);
   app.get('/sessions/:id', show);
   app.post('/sessions', create);
+  app.put('/sessions', update);
 };
 
 export default sessions_routes;
