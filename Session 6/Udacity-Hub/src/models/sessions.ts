@@ -21,4 +21,18 @@ export class SessionModel {
       );
     }
   }
+
+  async show(id: number): Promise<Session> {
+    try {
+      const connection = await client.connect();
+      const sql = `SELECT * FROM sessions WHERE id=(${id})`;
+      const result = await connection.query(sql, [id]);
+      connection.release();
+      return result.rows[0];
+    } catch (error) {
+      throw new Error(
+        `Failed to get the session with the following error: ${error}`
+      );
+    }
+  }
 }
