@@ -11,8 +11,19 @@ const index = async (req: Request, res: Response) => {
   }
 };
 
+const show = async (req: Request, res: Response) => {
+  try {
+    const id = Number(req.params.id);
+    const user = await students.show(id);
+    res.send(user);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
 const students_routes = (app: express.Application) => {
   app.get('/students', index);
+  app.get('/students/:id', show);
 };
 
 export default students_routes;
