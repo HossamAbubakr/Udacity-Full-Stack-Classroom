@@ -59,4 +59,18 @@ export class StudentsModel {
       );
     }
   }
+
+  async delete(id: number): Promise<Student> {
+    try {
+      const connection = await client.connect();
+      const sql = 'DELETE FROM students WHERE id=($1) RETURNING *';
+      const result = await connection.query(sql, [id]);
+      connection.release();
+      return result.rows[0];
+    } catch (error) {
+      throw new Error(
+        `Failed to delete student with the following error: ${error}`
+      );
+    }
+  }
 }
