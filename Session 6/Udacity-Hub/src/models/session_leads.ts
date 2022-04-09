@@ -62,4 +62,18 @@ export class LeadModel {
       );
     }
   }
+
+  async delete(id: number): Promise<Lead> {
+    try {
+      const connection = await client.connect();
+      const sql = 'DELETE FROM session_leads WHERE id=($1) RETURNING *';
+      const result = await connection.query(sql, [id]);
+      connection.release();
+      return result.rows[0];
+    } catch (error) {
+      throw new Error(
+        `Failed to delete session lead with the following error: ${error}`
+      );
+    }
+  }
 }
