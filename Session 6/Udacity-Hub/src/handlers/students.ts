@@ -21,9 +21,20 @@ const show = async (req: Request, res: Response) => {
   }
 };
 
+const create = async (req: Request, res: Response) => {
+  try {
+    const { name } = req.body;
+    const newUser = await students.create(name);
+    res.send(newUser);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
 const students_routes = (app: express.Application) => {
   app.get('/students', index);
   app.get('/students/:id', show);
+  app.post('/students', create);
 };
 
 export default students_routes;
