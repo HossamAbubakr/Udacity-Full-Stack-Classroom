@@ -4,6 +4,8 @@ import leads_routes from './handlers/session_leads';
 const app = express();
 const port = 3000;
 
+app.use(express.json());
+
 app.get('/', async (_req, res) => {
   res.send('Welcome to the Udacity Hub Api');
 });
