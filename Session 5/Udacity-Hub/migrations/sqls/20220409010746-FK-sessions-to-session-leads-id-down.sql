@@ -1,0 +1,2 @@
+ALTER TABLE sessions DROP COLUMN IF EXISTS sl_id CASCADE;
+ 
