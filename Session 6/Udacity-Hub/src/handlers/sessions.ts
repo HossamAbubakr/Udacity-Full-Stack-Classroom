@@ -43,11 +43,23 @@ const update = async (req: Request, res: Response) => {
   }
 };
 
+const destroy = async (req: Request, res: Response) => {
+  try {
+    const id = req.body.id;
+    const deletedSession = await sessions.delete(id);
+    res.send(deletedSession);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json(error);
+  }
+};
+
 const sessions_routes = (app: express.Application) => {
   app.get('/sessions', index);
   app.get('/sessions/:id', show);
   app.post('/sessions', create);
   app.put('/sessions', update);
+  app.delete('/sessions', destroy);
 };
 
 export default sessions_routes;
