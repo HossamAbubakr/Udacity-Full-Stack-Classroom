@@ -21,9 +21,20 @@ const show = async (req: Request, res: Response) => {
   }
 };
 
+const create = async (req: Request, res: Response) => {
+  try {
+    const { name } = req.body;
+    const newLead = await sessionLeads.create(name);
+    res.send(newLead);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
 const leads_routes = (app: express.Application) => {
   app.get('/leads', index);
   app.get('/leads/:id', show);
+  app.post('/leads', create);
 };
 
 export default leads_routes;
