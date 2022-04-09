@@ -84,4 +84,9 @@ export class SessionModel {
       );
     }
   }
+
+  async addStudent(studentId: number, sessionId: number) {
+    // TODO
+    // ADD FUNCTIONALITY
+  }
 }
