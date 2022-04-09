@@ -45,4 +45,18 @@ export class StudentsModel {
       );
     }
   }
+
+  async update(st: Student): Promise<Student> {
+    try {
+      const connection = await client.connect();
+      const sql = 'UPDATE students SET name=($1) WHERE id=($2) RETURNING *';
+      const result = await connection.query(sql, [st.name, st.id]);
+      connection.release();
+      return result.rows[0];
+    } catch (error) {
+      throw new Error(
+        `Failed to update student with the following error: ${error}`
+      );
+    }
+  }
 }
