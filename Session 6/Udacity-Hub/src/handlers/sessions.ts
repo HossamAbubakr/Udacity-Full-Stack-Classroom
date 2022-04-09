@@ -1,4 +1,4 @@
-import { SessionModel } from '../models/sessions';
+import { Session, SessionModel } from '../models/sessions';
 import express, { Request, Response } from 'express';
 const sessions = new SessionModel();
 
@@ -21,9 +21,21 @@ const show = async (req: Request, res: Response) => {
   }
 };
 
+const create = async (req: Request, res: Response) => {
+  try {
+    const { date, title, sl_id } = req.body;
+    const session: Session = { date, title, sl_id };
+    const newLead = await sessions.create(session);
+    res.send(newLead);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
 const sessions_routes = (app: express.Application) => {
   app.get('/sessions', index);
   app.get('/sessions/:id', show);
+  app.post('/sessions', create);
 };
 
 export default sessions_routes;
