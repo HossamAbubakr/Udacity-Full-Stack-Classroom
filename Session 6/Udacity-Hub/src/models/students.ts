@@ -19,4 +19,17 @@ export class StudentsModel {
       );
     }
   }
+  async show(id: number): Promise<Student> {
+    try {
+      const connection = await client.connect();
+      const sql = 'SELECT * FROM students WHERE id=($1)';
+      const result = await connection.query(sql, [id]);
+      connection.release();
+      return result.rows[0];
+    } catch (error) {
+      throw new Error(
+        `Failed to get the student with the following error: ${error}`
+      );
+    }
+  }
 }
