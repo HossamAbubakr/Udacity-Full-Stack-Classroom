@@ -50,4 +50,24 @@ export class SessionModel {
       );
     }
   }
+
+  async update(ss: Session): Promise<Session> {
+    try {
+      const connection = await client.connect();
+      const sql =
+        'UPDATE sessions SET date=($1), title=($2), sl_id=($3) WHERE id=($4) RETURNING *';
+      const result = await connection.query(sql, [
+        ss.date,
+        ss.title,
+        ss.sl_id,
+        ss.id,
+      ]);
+      connection.release();
+      return result.rows[0];
+    } catch (error) {
+      throw new Error(
+        `Failed to update session with the following error: ${error}`
+      );
+    }
+  }
 }
