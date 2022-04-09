@@ -42,11 +42,22 @@ const update = async (req: Request, res: Response) => {
   }
 };
 
+const destroy = async (req: Request, res: Response) => {
+  try {
+    const id = req.body.id;
+    const deletedUser = await students.delete(id);
+    res.send(deletedUser);
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
 const students_routes = (app: express.Application) => {
   app.get('/students', index);
   app.get('/students/:id', show);
   app.post('/students', create);
   app.put('/students', update);
+  app.delete('/students', destroy);
 };
 
 export default students_routes;
