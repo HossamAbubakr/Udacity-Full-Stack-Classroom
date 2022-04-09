@@ -33,4 +33,18 @@ export class LeadModel {
       );
     }
   }
+
+  async create(name: string): Promise<Lead> {
+    try {
+      const connection = await client.connect();
+      const sql = 'INSERT INTO session_leads (name) VALUES($1) RETURNING *';
+      const result = await connection.query(sql, [name]);
+      connection.release();
+      return result.rows[0];
+    } catch (error) {
+      throw new Error(
+        `Failed to add the session lead with the following error: ${error}`
+      );
+    }
+  }
 }
