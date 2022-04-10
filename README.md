@@ -13,3 +13,4 @@ Each session will include a project and a list of additional learning resources.
 - [Session 3](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%203)
 - [Session 4](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%204)
 - [Session 5](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%205)
+- [Session 6](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%206)
