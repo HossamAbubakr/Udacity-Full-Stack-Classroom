@@ -86,7 +86,17 @@ export class SessionModel {
   }
 
   async addStudent(studentId: number, sessionId: number) {
-    // TODO
-    // ADD FUNCTIONALITY
+    try {
+      const conn = await client.connect();
+      const sql =
+        'INSERT INTO student_sessions (student_id, session_id) VALUES($1, $2) RETURNING *';
+      const result = await conn.query(sql, [studentId, sessionId]);
+      conn.release();
+      return result.rows[0];
+    } catch (error) {
+      throw new Error(
+        `Could not add student ${studentId} to session ${sessionId}: ${error}`
+      );
+    }
   }
 }

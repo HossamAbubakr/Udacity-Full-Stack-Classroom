@@ -58,7 +58,8 @@ const addStudent = async (req: Request, res: Response) => {
   try {
     const sessionId = Number(req.params.id);
     const studentId = req.body.student_id;
-    const session = await sessions.addStudent(studentId, sessionId);
+    const studentSession = await sessions.addStudent(studentId, sessionId);
+    res.send(studentSession);
   } catch (error) {
     res.status(500).json(error);
   }
