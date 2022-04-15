@@ -2,10 +2,12 @@
 
 #### Session_Leads
 
-| Field    | Type             | Special Attributes |
-| -------- | ---------------- | ------------------ |
-| **id**   | **Serial**       | **Primary Key**    |
-| **name** | **VarChar(100)** | **N/A**            |
+| Field        | Type             | Special Attributes |
+| ------------ | ---------------- | ------------------ |
+| **id**       | **Serial**       | **Primary Key**    |
+| **name**     | **VarChar(100)** | **N/A**            |
+| **email**    | **VarChar(150)** | **N/A**            |
+| **password** | **VarChar(150)** | **N/A**            |
 
 #### Students
 
