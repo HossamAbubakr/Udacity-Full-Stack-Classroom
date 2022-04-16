@@ -3,3 +3,7 @@ DB_NAME
 DB_USER
 DB_PASSWORD
 TOKEN_SECRET
+PEPPER
+# The pepper used for this demonstration is:
+# thisismytotallysecretpepper
+# In case you want to use my data migration file it's important to use the same pepper
