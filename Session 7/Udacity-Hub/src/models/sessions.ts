@@ -11,7 +11,11 @@ export class SessionModel {
   async index(): Promise<Session[]> {
     try {
       const connection = await client.connect();
-      const sql = 'SELECT * FROM sessions';
+      const sql = `SELECT se.*,
+			array_agg(row_to_json(st)) AS attendance
+			FROM sessions se
+			JOIN student_sessions st ON se.id = st.session_id
+			GROUP BY se.id`;
       const result = await connection.query(sql);
       connection.release();
       return result.rows;
