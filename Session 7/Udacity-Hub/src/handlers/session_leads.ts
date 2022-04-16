@@ -22,10 +22,16 @@ const index = async (req: Request, res: Response) => {
 const show = async (req: Request, res: Response) => {
   try {
     const id = Number(req.params.id);
+    Verify(req, id);
     const lead = await sessionLeads.show(id);
     res.send(lead);
   } catch (error) {
-    res.status(500).json(error);
+    const e = error as Error;
+    if (e.message.includes('Failed to get the session lead')) {
+      res.status(500).json(e.message);
+    } else {
+      res.status(401).json(e.message);
+    }
   }
 };
 
@@ -43,20 +49,32 @@ const create = async (req: Request, res: Response) => {
 const update = async (req: Request, res: Response) => {
   try {
     const { id, password } = req.body;
+    Verify(req, id);
     const updatedLead = await sessionLeads.update(id, password);
     res.send(updatedLead);
   } catch (error) {
-    res.status(500).json(error);
+    const e = error as Error;
+    if (e.message.includes('Failed to update session lead')) {
+      res.status(500).json(e.message);
+    } else {
+      res.status(401).json(e.message);
+    }
   }
 };
 
 const destroy = async (req: Request, res: Response) => {
   try {
     const id = req.body.id;
+    Verify(req, id);
     const deletedLead = await sessionLeads.delete(id);
     res.send(deletedLead);
   } catch (error) {
-    res.status(500).json(error);
+    const e = error as Error;
+    if (e.message.includes('Failed to delete session lead')) {
+      res.status(500).json(e.message);
+    } else {
+      res.status(401).json(e.message);
+    }
   }
 };
 
