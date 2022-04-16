@@ -23,8 +23,9 @@ const show = async (req: Request, res: Response) => {
 
 const create = async (req: Request, res: Response) => {
   try {
-    const { name } = req.body;
-    const newLead = await sessionLeads.create(name);
+    const { name, email, password } = req.body;
+    const lead: Lead = { name, email, password };
+    const newLead = await sessionLeads.create(lead);
     res.send(newLead);
   } catch (error) {
     res.status(500).json(error);
@@ -33,9 +34,8 @@ const create = async (req: Request, res: Response) => {
 
 const update = async (req: Request, res: Response) => {
   try {
-    const { id, name } = req.body;
-    const lead: Lead = { id, name };
-    const updatedLead = await sessionLeads.update(lead);
+    const { id, password } = req.body;
+    const updatedLead = await sessionLeads.update(id, password);
     res.send(updatedLead);
   } catch (error) {
     res.status(500).json(error);
