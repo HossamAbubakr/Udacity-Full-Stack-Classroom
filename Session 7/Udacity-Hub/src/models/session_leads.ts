@@ -8,7 +8,7 @@ export type Lead = {
   password: string;
 };
 
-const { PEPPER } = process.env;
+const { PEPPER, SALT_ROUNDS } = process.env;
 
 export class LeadModel {
   async index(): Promise<Lead[]> {
@@ -44,11 +44,8 @@ export class LeadModel {
       const connection = await client.connect();
       const sql =
         'INSERT INTO session_leads (name, email, password) VALUES($1, $2, $3) RETURNING *';
-      const result = await connection.query(sql, [
-        sl.name,
-        sl.email,
-        sl.password,
-      ]);
+      const hash = bcrypt.hashSync(sl.password + PEPPER, Number(SALT_ROUNDS));
+      const result = await connection.query(sql, [sl.name, sl.email, hash]);
       connection.release();
       return result.rows[0];
     } catch (error) {
