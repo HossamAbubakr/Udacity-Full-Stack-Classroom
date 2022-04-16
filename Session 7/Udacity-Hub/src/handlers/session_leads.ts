@@ -40,9 +40,15 @@ const create = async (req: Request, res: Response) => {
     const { name, email, password } = req.body;
     const lead: Lead = { name, email, password };
     const newLead = await sessionLeads.create(lead);
-    res.send(newLead);
+    const token = Sign(Number(newLead.id));
+    res.send(token);
   } catch (error) {
-    res.status(500).json(error);
+    const e = error as Error;
+    if (e.message.includes('Failed to add the session lead')) {
+      res.status(500).json(e.message);
+    } else {
+      res.status(401).json(e.message);
+    }
   }
 };
 
