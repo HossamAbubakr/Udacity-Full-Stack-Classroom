@@ -1,13 +1,21 @@
 import { Lead, LeadModel } from '../models/session_leads';
 import express, { Request, Response } from 'express';
+import { Verify, Sign } from '../helpers/jwtHelper';
+
 const sessionLeads = new LeadModel();
 
 const index = async (req: Request, res: Response) => {
   try {
+    Verify(req);
     const users = await sessionLeads.index();
     res.send(users);
   } catch (error) {
-    res.status(500).json(error);
+    const e = error as Error;
+    if (e.message.includes('Failed to get the session leads')) {
+      res.status(500).json(e.message);
+    } else {
+      res.status(401).json(e.message);
+    }
   }
 };
 
