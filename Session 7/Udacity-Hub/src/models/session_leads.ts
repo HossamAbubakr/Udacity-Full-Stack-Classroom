@@ -3,6 +3,8 @@ import client from '../database';
 export type Lead = {
   id?: number;
   name: string;
+  email: string;
+  password: string;
 };
 
 export class LeadModel {
@@ -34,11 +36,16 @@ export class LeadModel {
     }
   }
 
-  async create(name: string): Promise<Lead> {
+  async create(sl: Lead): Promise<Lead> {
     try {
       const connection = await client.connect();
-      const sql = 'INSERT INTO session_leads (name) VALUES($1) RETURNING *';
-      const result = await connection.query(sql, [name]);
+      const sql =
+        'INSERT INTO session_leads (name, email, password) VALUES($1, $2, $3) RETURNING *';
+      const result = await connection.query(sql, [
+        sl.name,
+        sl.email,
+        sl.password,
+      ]);
       connection.release();
       return result.rows[0];
     } catch (error) {
@@ -48,12 +55,12 @@ export class LeadModel {
     }
   }
 
-  async update(sl: Lead): Promise<Lead> {
+  async update(id: number, password: string): Promise<Lead> {
     try {
       const connection = await client.connect();
       const sql =
-        'UPDATE session_leads SET name=($1) WHERE id=($2) RETURNING *';
-      const result = await connection.query(sql, [sl.name, sl.id]);
+        'UPDATE session_leads SET password=($1) WHERE id=($2) RETURNING *';
+      const result = await connection.query(sql, [password, id]);
       connection.release();
       return result.rows[0];
     } catch (error) {
