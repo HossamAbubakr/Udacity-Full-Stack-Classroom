@@ -1,4 +1,5 @@
 import client from '../database';
+import bcrypt from 'bcrypt';
 
 export type Lead = {
   id?: number;
@@ -6,6 +7,8 @@ export type Lead = {
   email: string;
   password: string;
 };
+
+const { PEPPER } = process.env;
 
 export class LeadModel {
   async index(): Promise<Lead[]> {
@@ -80,6 +83,25 @@ export class LeadModel {
     } catch (error) {
       throw new Error(
         `Failed to delete session lead with the following error: ${error}`
+      );
+    }
+  }
+
+  async authenticate(email: string, password: string): Promise<Lead | null> {
+    try {
+      const conn = await client.connect();
+      const sql = 'SELECT * FROM session_leads WHERE email=($1)';
+      const result = await conn.query(sql, [email]);
+      const lead = result.rows[0];
+      if (lead) {
+        if (bcrypt.compareSync(password + PEPPER, lead.password)) {
+          return lead;
+        }
+      }
+      return null;
+    } catch (error) {
+      throw new Error(
+        `Failed to sign in as session lead with the following error: ${error}`
       );
     }
   }
