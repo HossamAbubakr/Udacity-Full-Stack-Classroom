@@ -1,9 +1,19 @@
+# Database host
 DB_HOST
+# Development database name
 DB_NAME
+# Testing database name
+TEST_DB_NAME
+# Database user
 DB_USER
+# Database password
 DB_PASSWORD
+# JWT secret key
 TOKEN_SECRET
-PEPPER
+# Password hashing pepper
 # The pepper used for this demonstration is:
 # thisismytotallysecretpepper
 # In case you want to use my data migration file it's important to use the same pepper
+PEPPER
+# Environment indicator (dev, prod, test)
+ENV

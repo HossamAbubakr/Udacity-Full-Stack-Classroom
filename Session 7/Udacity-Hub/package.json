@@ -9,7 +9,7 @@
     "dev": "nodemon src/index.ts",
     "lint": "eslint src/*.ts",
     "lint:f": "eslint src/*.ts --fix",
-    "test": "tsc && jasmine"
+    "test": "tsc && set ENV=test&& db-migrate --env test up && jasmine && db-migrate --env test reset"
   },
   "keywords": [],
   "author": "",
