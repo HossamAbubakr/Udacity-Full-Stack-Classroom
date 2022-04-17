@@ -22,6 +22,11 @@ const index = async (req: Request, res: Response) => {
 const show = async (req: Request, res: Response) => {
   try {
     const id = Number(req.params.id);
+    if (!id) {
+      return res
+        .status(400)
+        .send('Error, missing or malformed parameters. id required');
+    }
     Verify(req, id);
     const lead = await sessionLeads.show(id);
     res.send(lead);
@@ -38,6 +43,13 @@ const show = async (req: Request, res: Response) => {
 const create = async (req: Request, res: Response) => {
   try {
     const { name, email, password } = req.body;
+    if (!name || !email || !password) {
+      return res
+        .status(400)
+        .send(
+          'Error, missing or malformed parameters. name, email, password required'
+        );
+    }
     const lead: Lead = { name, email, password };
     const newLead = await sessionLeads.create(lead);
     const token = Sign(Number(newLead.id));
@@ -55,6 +67,11 @@ const create = async (req: Request, res: Response) => {
 const update = async (req: Request, res: Response) => {
   try {
     const { id, password } = req.body;
+    if (!id || !password) {
+      return res
+        .status(400)
+        .send('Error, missing or malformed parameters. id, password required');
+    }
     Verify(req, id);
     const updatedLead = await sessionLeads.update(id, password);
     res.send(updatedLead);
@@ -71,6 +88,11 @@ const update = async (req: Request, res: Response) => {
 const destroy = async (req: Request, res: Response) => {
   try {
     const id = req.body.id;
+    if (!id) {
+      return res
+        .status(400)
+        .send('Error, missing or malformed parameters. id required');
+    }
     Verify(req, id);
     const deletedLead = await sessionLeads.delete(id);
     res.send(deletedLead);
@@ -86,6 +108,11 @@ const destroy = async (req: Request, res: Response) => {
 
 const authenticate = async (req: Request, res: Response) => {
   const { email, password } = req.body;
+  if (!email || !password) {
+    return res
+      .status(400)
+      .send('Error, missing or malformed parameters. email, password required');
+  }
   try {
     const lead = await sessionLeads.authenticate(email, password);
     if (lead === null) {
