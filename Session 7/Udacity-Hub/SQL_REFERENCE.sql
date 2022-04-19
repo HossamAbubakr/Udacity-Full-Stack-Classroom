@@ -32,3 +32,10 @@
 
     /* Insert some data into the students table */
     INSERT INTO students (name, sl_id) VALUES ('Ahmed Ali', 1);
+
+    /* Get all sessions with their individual attendance records */
+    SELECT se.*,
+        array_agg(row_to_json(st)) AS attendance
+        FROM sessions se
+        JOIN student_sessions st ON se.id = st.session_id
+        GROUP BY se.id
