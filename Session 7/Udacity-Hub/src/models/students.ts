@@ -1,7 +1,7 @@
 import client from '../database';
 
 export type Student = {
-  id: number;
+  id?: number;
   name: string;
 };
 
