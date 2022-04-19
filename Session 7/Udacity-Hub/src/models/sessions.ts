@@ -29,7 +29,7 @@ export class SessionModel {
   async show(id: number): Promise<Session> {
     try {
       const connection = await client.connect();
-      const sql = `SELECT * FROM sessions WHERE id=(${id})`;
+      const sql = `SELECT * FROM sessions WHERE id=($1)`;
       const result = await connection.query(sql, [id]);
       connection.release();
       return result.rows[0];
