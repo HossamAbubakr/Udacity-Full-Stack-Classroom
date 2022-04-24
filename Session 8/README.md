@@ -42,6 +42,6 @@ And by the end of session we learned about the meaning of deployment and the ste
 ## 🔗 Essentials
 
 - [How to host a static website on AWS?](https://aws.amazon.com/getting-started/hands-on/host-static-website/)
-- [Allow remote access to your AWS RDS **(IMPORTANT)**](hhttps://www.printfriendly.com/p/g/gz9r9w)
+- [Allow remote access to your AWS RDS (IMPORTANT)](hhttps://www.printfriendly.com/p/g/gz9r9w)
 - [Download link for Postbird (To test your RDS connection)](https://github.com/Paxa/postbird/releases)
 - [Where to check for the list of services covered under AWS free tier?](https://aws.amazon.com/free)
