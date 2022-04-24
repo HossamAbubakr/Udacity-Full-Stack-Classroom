@@ -1,8 +1,12 @@
 # Udacity Full-Stack Nanodegree Classroom
 
-This repo includes the live coding portion of my lecture for Udacity Full-Stack Nanodegree students.
+This repo includes the live coding portion of my lectures for Udacity Full-Stack Nanodegree students.
 
-It will be continuously updated and iterated upon.
+We are building a backend application called Udacity Hub which functions as a hub for udacity students and sessions leads.
+
+The app is built using Node, Express and Typescript.
+
+This repo will be continuously updated and iterated upon.
 
 Each session will include a project and a list of additional learning resources.
 
@@ -22,3 +26,7 @@ Each session will include a project and a list of additional learning resources.
 - [Session 6](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%206)
 - [Session 7](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%207)
 - [Resource Hub](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/blob/main/Build-A-Storefront-Backend-Resources.MD)
+
+### Project 2: (Hosting a Full-Stack Application)
+
+- [Session 8](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%208)
