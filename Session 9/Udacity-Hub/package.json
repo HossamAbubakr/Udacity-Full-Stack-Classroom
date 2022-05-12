@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && cp package.json dist/package.json && cd dist && zip -r Archive.zip . && cd ..",
+    "build": "tsc && cp .npmrc dist/.npmrc && cp package.json dist/package.json && cd dist && zip -r Archive.zip . && cd ..",
     "start": "tsc && node dist/index.js",
     "dev": "nodemon src/index.ts",
     "lint": "eslint src/*.ts",
