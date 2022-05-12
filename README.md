@@ -27,6 +27,7 @@ Each session will include a project and a list of additional learning resources.
 - [Session 7](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%207)
 - [Resource Hub](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/blob/main/Build-A-Storefront-Backend-Resources.MD)
 
-### Project 2: (Hosting a Full-Stack Application)
+### Project 3: (Hosting a Full-Stack Application)
 
 - [Session 8](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%208)
+- [Session 9](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%209)
