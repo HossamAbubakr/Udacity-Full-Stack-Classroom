@@ -2,6 +2,8 @@ branch-defaults:
   default:
     environment: Udacity-Hub-dev
     group_suffix: null
+deploy:
+  artifact: dist/Archive.zip
 global:
   application_name: Udacity-Hub
   branch: null
