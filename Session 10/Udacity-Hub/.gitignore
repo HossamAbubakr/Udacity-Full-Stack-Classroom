@@ -1,3 +1,4 @@
 node_modules
 dist
 .env
+# Remember to remove Elastic BeanStalk configuration from here
