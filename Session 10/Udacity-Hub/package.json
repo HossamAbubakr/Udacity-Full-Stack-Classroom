@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc && cp .npmrc dist/.npmrc && cp package.json dist/package.json && cd dist && zip -r Archive.zip . && cd ..",
+    "deploy": "eb use Udacity-Hub-dev && eb deploy",
     "start": "node index.js",
     "dev": "nodemon src/index.ts",
     "lint": "eslint src/*.ts",
