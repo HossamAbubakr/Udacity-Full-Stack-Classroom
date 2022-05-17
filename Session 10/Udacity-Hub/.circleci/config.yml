@@ -13,3 +13,6 @@ jobs:
       - node/install
       - aws-cli/setup
       - eb/setup
+      - run:
+          name: install the dependencies
+          command: npm install
