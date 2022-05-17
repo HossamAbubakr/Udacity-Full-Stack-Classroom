@@ -10,3 +10,6 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
+      - node/install
+      - aws-cli/setup
+      - eb/setup
