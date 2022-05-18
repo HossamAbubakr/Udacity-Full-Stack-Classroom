@@ -31,3 +31,5 @@ Each session will include a project and a list of additional learning resources.
 
 - [Session 8](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%208)
 - [Session 9](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%209)
+- [Session 10](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%2010)
+- [Resource Hub](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/blob/main/Udagram-Deployment-Process.MD)
