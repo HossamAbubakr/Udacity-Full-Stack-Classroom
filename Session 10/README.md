@@ -76,7 +76,6 @@ For today's bonus content we learned how to create diagrams of our infrastructur
 
 - [How to create/set environment variables in Elastic Beanstalk using the CLI](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-setenv.html)
 - [AWS EB CLI Cheat Sheet - Elastic Beanstalk (init/create/use/deploy etc)](https://www.cloudvedas.com/2017/12/aws-eb-cli-cheat-sheet-elastic-beanstalk.html)
-- [Deploy your Node.Js app on Aws Elastic Beanstalk](https://dev.to/drsimplegraffiti/deploy-your-node-js-app-on-aws-elastic-beanstalk-50jj)
 
 ### ⏩ CI/CD
 
