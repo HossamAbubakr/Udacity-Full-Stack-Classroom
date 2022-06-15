@@ -18,6 +18,7 @@ Each session will include a project and a list of additional learning resources.
 - [Session 2](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%202)
 - [Session 3](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/tree/main/Session%203)
 - [Resource Hub](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/blob/main/Image-Processing-API-Resources.MD)
+- [Project Tips & Tricks Video](https://www.youtube.com/watch?v=qCqAVsIavfQ)
 
 ### Project 2: (Build A Storefront Backend)
 
