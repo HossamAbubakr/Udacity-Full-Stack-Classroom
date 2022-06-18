@@ -10,6 +10,10 @@ We then added prettier and went through the basic configuration and created the 
 
 We finally learned how to make unit tests that makes sense and how to make unit tests for our endpoints.
 
+## ✍️ Quiz
+
+- [Session 3 Quiz](https://forms.gle/1dRZb136Wf2eb44r5)
+
 ## 🔗 Resources
 
 - [What is Express.js middleware?](https://www.tutorialspoint.com/expressjs/expressjs_middleware.htm)
