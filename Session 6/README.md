@@ -51,6 +51,10 @@ So the end result is something like this:
 psql -U postgres -d udacity_hub -a -f initialization.sql
 ```
 
+## ✍️ Quiz
+
+- [Session 6 Quiz](https://forms.gle/C7GuTRAKbLyx1ygA7)
+
 ## 🔗 Resources
 
 - [What are CRUD operations?](https://stackify.com/what-are-crud-operations/)
