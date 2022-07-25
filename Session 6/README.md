@@ -16,6 +16,10 @@ We used the correct methods to connect our handlers with our methods and allowed
 
 We finally learned about JWT and tokens in a visual way that represented a user's journey through our website from authentication to authorization.
 
+## ✍️ Quiz
+
+- [Session 6 Quiz](https://forms.gle/C7GuTRAKbLyx1ygA7)
+
 ## 📝 Notes
 
 #### Data Migration
