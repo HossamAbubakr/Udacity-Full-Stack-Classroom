@@ -16,6 +16,10 @@ We learned the use cases of a many to many relationship and how to both visualiz
 
 We also took a sneak peak at the meaning of CRUD and discussed which operations should we implement into our application.
 
+## ✍️ Quiz
+
+- [Session 5 Quiz](https://forms.gle/1YHUhiYp5gjESXdTA)
+
 ## 🔗 Resources
 
 - [What is a database schema?](https://www.educative.io/blog/what-are-database-schemas-examples)
