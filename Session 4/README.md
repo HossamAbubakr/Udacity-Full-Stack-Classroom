@@ -18,6 +18,10 @@ After learning about tables, we learned about relationships and their different 
 
 Finally we initialized our express application and connected to our database and retrieved data from it.
 
+## ✍️ Quiz
+
+- [Session 4 Quiz](https://forms.gle/dUuNpGs65ZcnGM7a8)
+
 ## 🔗 Resources
 
 - [SQL VS NoSQL](https://www.geeksforgeeks.org/difference-between-sql-and-nosql/)
