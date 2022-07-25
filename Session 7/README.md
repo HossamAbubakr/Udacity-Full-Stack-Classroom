@@ -14,6 +14,10 @@ We then implementing hashing, salting and peppering into our project.
 
 We then learned how to use jasmine to create unit tests for models with complex relationships and explained the steps needed to make a comprehensive unit test.
 
+## ✍️ Quiz
+
+- [Session 7 Quiz](https://forms.gle/MPut5rX4Coxj5C1HA)
+
 ## 📝 Notes
 
 <br />
