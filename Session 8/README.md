@@ -24,6 +24,10 @@ And by the end of the session we used our newly acquired knowledge to create, pr
 
 And by the end of session we learned about the meaning of deployment and the steps needed to successfully deploy an application using our app. _Udacity Hub_ as an example.
 
+## ✍️ Quiz
+
+- [Session 8 Quiz](https://forms.gle/AfxaLzDQfpPSjHHRA)
+
 ## 🔗 Resources
 
 ### ☁️ Cloud Computing
