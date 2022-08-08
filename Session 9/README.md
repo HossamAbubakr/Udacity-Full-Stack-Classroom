@@ -12,6 +12,10 @@ Lastly we successfully deployed our application and fixed all the common issues 
 
 As a bonus we learned some essentials regarding CI/CD in preparation for our next session.
 
+## ✍️ Quiz
+
+- [Session 9 Quiz](https://forms.gle/1tn2neTc5okwYtP98)
+
 ## 🔗 Resources
 
 ### 🚀 Cloud Deployment
