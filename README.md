@@ -165,6 +165,8 @@ Your contributions are welcome! Whether to:
 - Propose new features
 - Comment on a commit to explain it further.
 
+Our [community](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/discussions) is also open for any of your ideas and questions.
+
 Please note that we have a few self-imposed restrictions
 
 - The changes need to fall under the content of the Nanodegree
