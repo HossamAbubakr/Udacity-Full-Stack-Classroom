@@ -1,8 +1,8 @@
 /* Populate The Session Leads Table */
-INSERT INTO session_leads (name, email, password) VALUES ('Hossam Abubakr', 'hossam@udacity.com', '$2b$10$2dTaHEa2QPzJO7gRXKiweuM8/cLapX6cKzQPierKhU7.dj2j4IKp.'); /* pass before hashing: pass123 */
-INSERT INTO session_leads (name, email, password) VALUES ('Mohammed Elzanaty', 'zanaty@udacity.com', '$2b$10$f.k8.AT.U3Zy0pPXjwVGje0W2jy3/VfNUpMDYpw718dpvYXymJKFG'); /* pass before hashing: 123456 */
-INSERT INTO session_leads (name, email, password) VALUES ('Amr Hassan', 'amr@udacity.com', '$2b$10$9XlShxGKgSG1CvYQIVaJv.2dpqUDuXIKhJtbIFJR.GE.MHU8j4wKG'); /* pass before hashing: 112233 */
-INSERT INTO session_leads (name, email, password) VALUES ('Ziyad Khalil', 'ziyad@udacity.com', '$2b$10$Q1xUHTkb.1tP559tmVKU2ur6n4ZSf1b7wxJeLNzNLyStkEIFEcJc6'); /* pass before hashing: abc123 */
+INSERT INTO session_leads (name, email, password) VALUES ('Hossam Abubakr', 'hossam@mail.com', '$2b$10$2dTaHEa2QPzJO7gRXKiweuM8/cLapX6cKzQPierKhU7.dj2j4IKp.'); /* pass before hashing: pass123 */
+INSERT INTO session_leads (name, email, password) VALUES ('Mohammed Elzanaty', 'zanaty@mail.com', '$2b$10$f.k8.AT.U3Zy0pPXjwVGje0W2jy3/VfNUpMDYpw718dpvYXymJKFG'); /* pass before hashing: 123456 */
+INSERT INTO session_leads (name, email, password) VALUES ('Amr Hassan', 'amr@mail.com', '$2b$10$9XlShxGKgSG1CvYQIVaJv.2dpqUDuXIKhJtbIFJR.GE.MHU8j4wKG'); /* pass before hashing: 112233 */
+INSERT INTO session_leads (name, email, password) VALUES ('Ziyad Khalil', 'ziyad@mail.com', '$2b$10$Q1xUHTkb.1tP559tmVKU2ur6n4ZSf1b7wxJeLNzNLyStkEIFEcJc6'); /* pass before hashing: abc123 */
 
 /* Populate The Students Table */
 INSERT INTO students (name) VALUES ('Ahmed Abdel-Gawad');
