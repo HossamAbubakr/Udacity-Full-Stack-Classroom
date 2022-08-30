@@ -31,15 +31,15 @@ Those wonderful team members took the leadership roles in their respective teams
 
 #### 🤝 Research Collab
 
-- [Week 1](/Week%201/)
-- [Week 2](/Week%202/)
-- [Week 3](/Week%203/)
+- [Week 1](Week%201/)
+- [Week 2](Week%202/)
+- [Week 3](Week%203/)
 
 #### 🤜🤛 Tech Brawl
 
-- [Week 4](/Week%204/)
-- [Week 5](/Week%205/)
-- [Week 6](/Week%206/)
-- [Week 7](/Week%207/)
-- [Week 8](/Week%208/)
-- [Week 9](/Week%209/)
+- [Week 4](Week%204/)
+- [Week 5](Week%205/)
+- [Week 6](Week%206/)
+- [Week 7](Week%207/)
+- [Week 8](Week%208/)
+- [Week 9](Week%209/)
