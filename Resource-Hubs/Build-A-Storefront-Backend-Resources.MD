@@ -1,6 +1,6 @@
-## 🔗 Resources
+## 🖥️​ (Build A Storefront Backend Project) Learning Resources
 
-### SQL
+### 💼​ SQL
 
 - [SQL VS NoSQL](https://www.geeksforgeeks.org/difference-between-sql-and-nosql/)
 - [SQL Joins](https://learnsql.com/blog/learning-sql-joins-using-real-life-situations/)
@@ -13,14 +13,14 @@
 - [Why should you choose PostgreSQL](https://kanakinfosystems.com/blog/why-choose-postgresql)
 - [Types of relationships (O-O, O-M, M-M)](https://www.tutorialsteacher.com/sqlserver/tables-relations)
 
-### Migration
+### 🚧​ Migration
 
 - [What is a database schema?](https://www.educative.io/blog/what-are-database-schemas-examples)
 - [What is a schema migration?](https://docs.adonisjs.com/guides/database/migrations)
 - [db-migrate documentations](https://db-migrate.readthedocs.io/en/latest/Getting%20Started/usage/)
 - [Using db-migrate and pg-admin to automate migration scripts](https://www.kindsonthegenius.com/db-migrate-simplified-how-to-generate-posgresql-database-from-node-js/)
 
-### Security
+### ​🛡️​ Security
 
 - [Anatomy of a JWT](https://www.digitalocean.com/community/tutorials/the-anatomy-of-a-json-web-token)
 - [Why do we use JWTs?](https://www.educative.io/edpresso/why-should-you-use-jwts)
@@ -34,7 +34,7 @@
 - [What is AES encryption?](https://cybernews.com/resources/what-is-aes-encryption/)
 - [What is Bcrypt?](https://auth0.com/blog/hashing-in-action-understanding-bcrypt/)
 
-### Unit Testing
+### 🔁​ Unit Testing
 
 - [Jasmine before all, after all, etc..](https://jasmine.github.io/api/4.1/global)
 - [Jasmine before all VS before each](http://breazeal.com/blog/jasmineBefore.html)

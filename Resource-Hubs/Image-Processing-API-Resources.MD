@@ -1,6 +1,6 @@
-## 🔗 Resources
+## 🖼️​ (Image Processing API Project) Learning Resources
 
-### TypeScript
+### 🛂​ TypeScript
 
 - [What is TypeScript?](https://www.typescripttutorial.net/typescript-tutorial/what-is-typescript/)
 - [Why use TypeScript?](https://serokell.io/blog/why-typescript)
@@ -8,21 +8,21 @@
 - [TypeScript is a superset of Javascript](https://blog.scottlogic.com/2021/10/11/Capturing-Intent-with-TypeScript.html)
 - [TypeScript is a superset of Javascript](https://blog.scottlogic.com/2021/10/11/Capturing-Intent-with-TypeScript.html)
 
-### Code Quality
+### 👨🏻‍💻​ Code Quality
 
 - [What, Why and How to use a linter?](https://www.perforce.com/blog/qac/what-lint-code-and-why-linting-important)
 - [What, Why and How to use a formatter?](https://medium.com/@ryconoclast/why-you-should-use-a-code-formatter-4f02dd40db14)
 - [The difference between linters and formatters](https://taiyr.me/what-is-the-difference-between-code-linters-and-formatters)
 - [Why Should You Use Typescript Over Javascript?](https://dev.to/shreyanshsheth/why-you-should-use-typescript-over-javascript-gkb)
 
-### Express
+### 🌐 Express
 
 - [How to use Express.js Router](https://www.geeksforgeeks.org/express-js-express-router-function/)
 - [What is Express.js middleware?](https://www.tutorialspoint.com/expressjs/expressjs_middleware.htm)
 - [How does Express.js middleware work?](https://selvaganesh93.medium.com/how-node-js-middleware-works-d8e02a936113)
 - [How to structure our Express.js project?](https://dev.to/iamsrujal/nodejs-express-project-structure-for-rest-api-37oa)
 
-### Unit Testing
+### 🔁​ Unit Testing
 
 - [What is unit testing?](https://smartbear.com/learn/automated-testing/what-is-unit-testing/)
 - [Why should you use unit testing?](https://fortegrp.com/the-importance-of-unit-testing/)
