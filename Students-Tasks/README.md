@@ -52,4 +52,4 @@ Starting with session 4 you are encouraged to choose your team leader who will h
 
 ## 🗂️ Archive
 
-- [June 2022 Cohort](/June-2022-Cohort/README.md)
+- [June 2022 Cohort](June-2022-Cohort/README.md)

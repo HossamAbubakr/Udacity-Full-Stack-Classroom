@@ -1,4 +1,4 @@
-## 🔗 Resources
+## 🚀 (Udagram Deployment Project) Learning Resources
 
 ### ☁️ Cloud Computing
 
