@@ -11,9 +11,17 @@ While the PDFs were generated from their submissions, some of the links to the p
 
 Here is a list of all the team members who worked on these tasks that wanted to share their contact information.
 
-| Name | Links |
-| ---- | :---: |
-| TBD  |  TBD  |
+| Name            |                               Links                                |
+| --------------- | :----------------------------------------------------------------: |
+| Ahmed Heaba     |   [Linkedin](https://www.linkedin.com/in/ahmed-heaba-918a241a3/)   |
+| Ahmed Shokry    |     [Linkedin](https://www.linkedin.com/in/dev-ahmed-shokry/)      |
+| Mohamed Aboarab | [Linkedin](https://www.linkedin.com/in/mohamed-aboarab-080068248/) |
+| Mohamed Hassan  |    [Linkedin](https://www.linkedin.com/in/mohamed-hassan-dev/)     |
+| Mohamed Raafat  |         [Linkedin](https://www.linkedin.com/in/mo-raafat/)         |
+| Shimaa Adel     |         [Linkedin](https://www.linkedin.com/in/shemoadel/)         |
+| Shaymaa Hafez   |      [Linkedin](https://www.linkedin.com/in/oneworldlancer/)       |
+| Yousef Alaa     |        [Linkedin](https://www.linkedin.com/in/yousefalaa/)         |
+| Yousef Sabry    |       [Linkedin](https://www.linkedin.com/in/youssef-sabry/)       |
 
 ### 👑 Team Leads
 
