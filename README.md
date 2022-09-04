@@ -88,7 +88,7 @@ By the end of session 10 you will be able to:
 - [Session 1](/Session%201)
 - [Session 2](/Session%202)
 - [Session 3](/Session%203)
-- [Resource Hub](/Image-Processing-API-Resources.MD)
+- [Resource Hub](/Resource-Hubs/Image-Processing-API-Resources.MD)
 - [Project Tips & Tricks Video](https://www.youtube.com/watch?v=qCqAVsIavfQ)
 
 ### Project 2: (Build A Storefront Backend)
@@ -97,14 +97,14 @@ By the end of session 10 you will be able to:
 - [Session 5](/Session%205)
 - [Session 6](/Session%206)
 - [Session 7](/Session%207)
-- [Resource Hub](/Build-A-Storefront-Backend-Resources.MD)
+- [Resource Hub](/Resource-Hubs/Build-A-Storefront-Backend-Resources.MD)
 
 ### Project 3: (Hosting a Full-Stack Application)
 
 - [Session 8](/Session%208)
 - [Session 9](/Session%209)
 - [Session 10](/Session%2010)
-- [Resource Hub](/Udagram-Deployment-Process.MD)
+- [Resource Hub](/Resource-Hubs/Udagram-Deployment-Process.MD)
 
 ## 💻 Setup
 
@@ -165,7 +165,7 @@ Your contributions are welcome! Whether to:
 - Propose new features
 - Comment on a commit to explain it further.
 
-Our [community](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/discussions) is also open for any of your ideas and questions.
+Our **[community](https://github.com/HossamAbubakr/Udacity-Full-Stack-Classroom/discussions)** is also open for any of your ideas and questions.
 
 Please note that we have a few self-imposed restrictions
 
@@ -187,6 +187,6 @@ Please note that any contributions you make will be under the MIT software licen
 
 This project and its code are licensed under the [MIT license](http://choosealicense.com/licenses/mit/).
 
-## ⚠️ Disclaimer
+## ⚖️​ Legal Disclaimer
 
 Udacity's name and logo are trademarked and owned by The Udacity™ Organization.
