@@ -12,6 +12,9 @@ We finally learned how to configure eslint and prettier with our custom rules.
 
 For this week's bonus content we learned about backend development essentials!
 
+## ✍️ Quiz
+- [Session 2 Quiz](https://forms.gle/4Xhwk9xVSJjk4MsS7)
+
 ## 🔗 Resources
 
 - [What, Why and How to use a linter?](https://www.perforce.com/blog/qac/what-lint-code-and-why-linting-important).
