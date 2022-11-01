@@ -34,7 +34,7 @@ Here is a list of all the team members who worked on these tasks that wanted to 
 | ⭐Ahmed Hisham      |           11            | [Linkedin](https://www.linkedin.com/in/ahmed-hisham-8945441b1/)  |
 | ⭐Ahmed Mostafa     |            5            | [Linkedin](https://www.linkedin.com/in/ahmed-mostafa-a68b07187/) |
 | ⭐Alaa Magdy        |            8            |  [Linkedin](https://www.linkedin.com/in/alaa-magdy-46a823179/)   |
-| ⭐Esraa Hussein     |            5            |       [Linkedin](www.linkedin.com/in/esraa-dahy-801349245)       |
+| ⭐Esraa Hussein     |            5            |       [Linkedin](https://www.linkedin.com/in/esraa-dahy-801349245/)       |
 | Hassan Ezz          |            4            |        [Linkedin](https://www.linkedin.com/in/hasssanezz)        |
 | ⭐Nagy Nabil        |            5            |  [Linkedin](https://www.linkedin.com/in/nagy-nabil-1535601ba/)   |
 | Reem Sameh          |            2            |  [Linkedin](https://www.linkedin.com/in/reem-sameh-984594249/)   |
@@ -60,7 +60,7 @@ Those wonderful team members took the leadership roles in their respective teams
 | Bad Cats      | Ahmed M. Osman |      [Linkedin](https://www.linkedin.com/in/ahmed-mosman/)      |
 | Cool Rabbits  | Alaa Magdy     |  [Linkedin](https://www.linkedin.com/in/alaa-magdy-46a823179/)  |
 | Cool Rabbits  | Ahmed Hisham   | [Linkedin](https://www.linkedin.com/in/ahmed-hisham-8945441b1/) |
-| Sleepy Pandas | Mohamed Khamis |                               TBD                               |
+| Sleepy Pandas | Mohamed Khamis |                              [Linkedin](https://www.linkedin.com/in/mohamed-khamis-924621231/)                              |
 
 ### 📝 Task List
 
