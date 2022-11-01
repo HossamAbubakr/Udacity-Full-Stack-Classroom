@@ -15,48 +15,52 @@ Here is a list of all the team members who worked on these tasks that wanted to 
 
 | Name                 | Number Of Contributions |                                 Links                                 |
 | -------------------- | :---------------------: | :-------------------------------------------------------------------: |
-| Adham Magdy       |            2            | [Linkedin](https://www.linkedin.com/in/adham-magdy-79a6071b4/)  |
-| ⭐Ahmed M. Osman     |            3            |         [Linkedin](https://www.linkedin.com/in/ahmed-mosman/)         |
+| Adham Magdy          |            2            |    [Linkedin](https://www.linkedin.com/in/adham-magdy-79a6071b4/)     |
+| ⭐Ahmed M. Osman     |           13            |         [Linkedin](https://www.linkedin.com/in/ahmed-mosman/)         |
 | Beshoy Morad         |            1            |         [Linkedin](https://www.linkedin.com/in/beshoymorad/)          |
+| Fatma Yasser         |            4            |    [Linkedin](https://www.linkedin.com/in/fatma-yasser-68b784202/)    |
 | Gerges Zechariah     |            1            |       [Linkedin](https://www.linkedin.com/in/gerges-zechariah/)       |
-| ⭐Ibrahim Hafez      |            3            |        [Linkedin](https://www.linkedin.com/in/ibrahim-hafez/)         |
-| ⭐Khaled Abdelrahman |            3            | [Linkedin](https://www.linkedin.com/in/khaled-abdelrahman-350493210/) |
+| ⭐Ibrahim Hafez      |           13            |        [Linkedin](https://www.linkedin.com/in/ibrahim-hafez/)         |
+| ⭐Khaled Abdelrahman |           13            | [Linkedin](https://www.linkedin.com/in/khaled-abdelrahman-350493210/) |
 | Mario Samy           |            1            |     [Linkedin](https://www.linkedin.com/in/mario-samy-2a3036246/)     |
-| Mohamed Adel         |            1            |     [Linkedin](https://www.linkedin.com/in/mohamed-adel-11762820b/)      |
+| Mohamed Adel         |            7            |    [Linkedin](https://www.linkedin.com/in/mohamed-adel-11762820b/)    |
+| Yousef Aboalata      |            4            |         [Github](http://yousefel-black.github.io/Portfolio-1)         |
 
 #### 🐰 Cool Rabbits
 
 | Name                | Number Of Contributions |                              Links                               |
 | ------------------- | :---------------------: | :--------------------------------------------------------------: |
 | Abdelmoneim Elsayed |            1            |       [Linkedin](https://www.linkedin.com/in/meniemhany/)        |
-| ⭐Ahmed Hisham      |            3            | [Linkedin](https://www.linkedin.com/in/ahmed-hisham-8945441b1/)  |
-| Ahmed Mostafa       |            1            | [Linkedin](https://www.linkedin.com/in/ahmed-mostafa-a68b07187/) |
-| Alaa Magdy          |            2            |  [Linkedin](https://www.linkedin.com/in/alaa-magdy-46a823179/)   |
-| Esraa Hussein       |            1            |                               TBD                                |
-| ⭐Nagy Nabil        |            2            |  [Linkedin](https://www.linkedin.com/in/nagy-nabil-1535601ba/)   |
-| ⭐Reem Sameh        |            2            |  [Linkedin](https://www.linkedin.com/in/reem-sameh-984594249/)   |
+| ⭐Ahmed Hisham      |           11            | [Linkedin](https://www.linkedin.com/in/ahmed-hisham-8945441b1/)  |
+| ⭐Ahmed Mostafa     |            5            | [Linkedin](https://www.linkedin.com/in/ahmed-mostafa-a68b07187/) |
+| ⭐Alaa Magdy        |            8            |  [Linkedin](https://www.linkedin.com/in/alaa-magdy-46a823179/)   |
+| ⭐Esraa Hussein     |            5            |       [Linkedin](www.linkedin.com/in/esraa-dahy-801349245)       |
+| Hassan Ezz          |            4            |        [Linkedin](https://www.linkedin.com/in/hasssanezz)        |
+| ⭐Nagy Nabil        |            5            |  [Linkedin](https://www.linkedin.com/in/nagy-nabil-1535601ba/)   |
+| Reem Sameh          |            2            |  [Linkedin](https://www.linkedin.com/in/reem-sameh-984594249/)   |
 | Yasser Ramadan      |            1            |         [Linkedin](https://www.linkedin.com/in/yasram/)          |
 
 #### 🐼 Sleepy Pandas
 
 | Name              | Number Of Contributions |                              Links                              |
 | ----------------- | :---------------------: | :-------------------------------------------------------------: |
-| ⭐Ahmed Abu Qahf  |            3            |        [Linkedin](https://www.linkedin.com/in/abokahfa/)        |
-| ⭐Ahmed Hamdy     |            3            | [Linkedin](https://www.linkedin.com/in/ahmed-hamdy-b89280233/)  |
-| Ahmed Hamdy Ameen |            1            | [Linkedin](https://www.linkedin.com/in/ahmed-hamdy-782972190/)  |
-| David Alfons      |            1            | [Linkedin](https://www.linkedin.com/in/david-alfons-6aa192104/) |
+| ⭐Ahmed Abu Qahf  |           10            |        [Linkedin](https://www.linkedin.com/in/abokahfa/)        |
+| ⭐Ahmed Hamdy     |            5            | [Linkedin](https://www.linkedin.com/in/ahmed-hamdy-b89280233/)  |
+| Ahmed Hamdy Ameen |            3            | [Linkedin](https://www.linkedin.com/in/ahmed-hamdy-782972190/)  |
+| David Alfons      |            2            | [Linkedin](https://www.linkedin.com/in/david-alfons-6aa192104/) |
 | Mario Samy        |            1            |  [Linkedin](https://www.linkedin.com/in/mario-samy-2a3036246/)  |
-| ⭐Mina Sameh      |            3            |  [Linkedin](https://www.linkedin.com/in/mina-sameh-258992216/)  |
+| ⭐Mina Sameh      |           13            |  [Linkedin](https://www.linkedin.com/in/mina-sameh-258992216/)  |
 
 ### 👑 Team Leads
 
 Those wonderful team members took the leadership roles in their respective teams and did their best to assist their fellow students.
 
-| Team          | Name | Links |
-| ------------- | ---- | :---: |
-| Bad Cats      | TBD  |  TBD  |
-| Cool Rabbits  | TBD  |  TBD  |
-| Sleepy Pandas | TBD  |  TBD  |
+| Team          | Name           |                              Links                              |
+| ------------- | -------------- | :-------------------------------------------------------------: |
+| Bad Cats      | Ahmed M. Osman |      [Linkedin](https://www.linkedin.com/in/ahmed-mosman/)      |
+| Cool Rabbits  | Alaa Magdy     |  [Linkedin](https://www.linkedin.com/in/alaa-magdy-46a823179/)  |
+| Cool Rabbits  | Ahmed Hisham   | [Linkedin](https://www.linkedin.com/in/ahmed-hisham-8945441b1/) |
+| Sleepy Pandas | Mohamed Khamis |                               TBD                               |
 
 ### 📝 Task List
 
@@ -68,4 +72,8 @@ Those wonderful team members took the leadership roles in their respective teams
 
 #### 🤜🤛 Tech Brawl
 
-- TBD
+- [Week 4](Week%204/)
+- [Week 5](Week%205/)
+- [Week 6](Week%206/)
+- [Week 7](Week%207/)
+- [Week 8](Week%208/)
