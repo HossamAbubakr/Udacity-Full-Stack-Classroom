@@ -2,6 +2,10 @@
 <div align="center">
  <img src="https://raw.githubusercontent.com/codarme/stylelint/HEAD/logo.png" width="600"/>
 <h1> Eslint and Prettier config Step by Step </h1>
+ 
+![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/%40babel/core?style=falt&logo=eslint&logoColor=purple&label=eslint&labelColor=white&color=purple)
+![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/%40babel/core?style=plastic&logo=prettier&logoColor=red&label=prettier&labelColor=black&color=purple&link=https%3A%2F%2Fprettier.org)
+
 
 </div>
 
