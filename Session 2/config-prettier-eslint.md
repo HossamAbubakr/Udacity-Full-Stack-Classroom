@@ -12,7 +12,7 @@
   - choose LTS Version (Long Term Support)
   - there are also binaries for `Linux` / `Mac` if u don't want to install it from the terminal once you are done from download unzip it & add this `./sh`
 
-- 1.2 mac or linux (
+- 1.2 mac or linux ( Terminal )
 
   - ```bash
        brew update && brew upgrade node
