@@ -105,7 +105,7 @@
        npx eslint init
         ```
 
-  - if  eslint` installed `global` run this it will ask u some question
+  - if  eslint ` installed ` global` run this it will ask you some question
 
     - ```ps
        eslint --init
