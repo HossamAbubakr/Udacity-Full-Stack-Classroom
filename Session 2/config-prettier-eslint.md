@@ -86,10 +86,8 @@
 - 4.1 🚅 run this in your terminal
 
     - ```ps
-          npm i --save-dev eslint @typescript-eslint/parser typescript \
-          eslint-config-prettier eslint-plugin-import eslint-plugin-node \
-          eslint-plugin-promise eslint-plugin-react eslint-plugin-jsx-a11y \
-          eslint-plugin-standard prettier
+          npm i --save-dev  eslint \
+         eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import 
       ```
 
 ## 5 🚀 Create eslint file 
@@ -100,13 +98,13 @@
   - run this in your terminal
 
     - ```shell
-          npx eslint init
+       npx eslint init
         ```
 
   - if  eslint` installed `global` run this it will ask u some question
 
     - ```ps
-          eslint --init
+       eslint --init
        ```
 
 - 5.1 `manually`: follow these steps and u will create the file and config
@@ -147,15 +145,15 @@
   - 6.1 ⚡ add this in your package.json be sure you describe the folder of your project and replaced it with **test** in `prettier`
     
     - ```json
-        "lint": "eslint . --ext .js",
-        "lint:fix": "npm run lint -- --fix",
-        "prettier:fix": "npm run prettier -- --write",
-        "format": "npm run prettier:fix && npm run lint:fix"
+          "lint": "eslint . --ext .js",
+          "lint:fix": "npm run lint -- --fix",
+          "prettier:fix": "npm run prettier -- --write",
+          "format": "npm run prettier:fix && npm run lint:fix"
       ```
 ## 7 ✔ Let's Run this magic
   - 7.1 run this in your terminal
     ```bash
-        npm run format
+           npm run format
       ```
  - 7.2 output
     - ```bash
