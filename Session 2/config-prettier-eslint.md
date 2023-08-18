@@ -1,7 +1,7 @@
 
 <div align="center">
  <img src="https://raw.githubusercontent.com/codarme/stylelint/HEAD/logo.png" width="600"/>
-<h1> Eslint and Prettier Step by Step </h1>
+<h1> Eslint and Prettier config Step by Step </h1>
 
 </div>
 
