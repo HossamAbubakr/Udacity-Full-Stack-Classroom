@@ -1,7 +1,7 @@
 
 <div align="center">
  <img src="https://raw.githubusercontent.com/codarme/stylelint/HEAD/logo.png" width="600"/>
-<h1> Eslint and Prettier config Step by Step </h1>
+<h1> Eslint and Prettier and Typescript config Step by Step </h1>
  
 ![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/%40babel/core?style=falt&logo=eslint&logoColor=purple&label=eslint&labelColor=white&color=purple)
 ![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/%40babel/core?style=plastic&logo=prettier&logoColor=red&label=prettier&labelColor=black&color=purple&link=https%3A%2F%2Fprettier.org)
@@ -80,17 +80,19 @@
 
   - ```json
         "scripts":{
-       "prettier":"prettier --write test \"*.js\" --check"
+       "prettier":"prettier --write \"src/**/*.{js,ts}\" --check"
         },
      ```
 
-## 4 🔥 Installation config for eslint with prettier
+## 4 🔥 Installation config for eslint and prettier with typescript
 
 - 4.1 🚅 run this in your terminal
 
     - ```ps
-          npm i --save-dev  eslint \
-          eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import 
+          npm i --save-dev typescript eslint \
+          @typescript-eslint/eslint-plugin @typescript-eslint/parser \
+          eslint-config-airbnb-base eslint-config-prettier \
+          eslint-plugin-prettier eslint-plugin-important 
       ```
 
 ## 5 🚀 Create eslint file 
@@ -119,14 +121,15 @@
               browser: true,
               es2021: true,
             },
-            extends: ['airbnb-base', 'prettier'],
-            plugins: ['prettier'],
+            extends: ['airbnb-base', 'prettier', 'eslint:recommended','plugin:@typescript-eslint/recommended'],
+            plugins: ['@typescript-eslint', 'prettier'],
+           parser: '@typescript-eslint/parser',
             overrides: [
               {
                 env: {
                   node: true,
                 },
-                files: ['.eslintrc.{js,cjs}'],
+                files: ['.eslintrc.{js,cjs,ts}'],
                 parserOptions: {
                   sourceType: 'script',
                 },
@@ -137,7 +140,7 @@
               sourceType: 'module',
             },
             rules: {
-              'prettier/prettier': ['error'],
+              'prettier/prettier': 1,
             },
           }
           " > .eslintrc.cjs
@@ -148,7 +151,8 @@
   - 6.1 ⚡ add this in your package.json be sure you describe the folder of your project and replaced it with **test** in `prettier`
     
     - ```json
-          "lint": "eslint . --ext .js",
+         "build" : "npx tsc"
+          "lint": "eslint . --ext *.{js,ts}",
           "lint:fix": "npm run lint -- --fix",
           "prettier:fix": "npm run prettier -- --write",
           "format": "npm run prettier:fix && npm run lint:fix"
