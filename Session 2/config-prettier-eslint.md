@@ -91,7 +91,7 @@
 
     - ```ps
           npm i --save-dev  eslint \
-         eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import 
+          eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import 
       ```
 
 ## 5 🚀 Create eslint file 
