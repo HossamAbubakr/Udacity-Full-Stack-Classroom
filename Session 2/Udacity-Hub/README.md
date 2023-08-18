@@ -172,7 +172,7 @@
         
         
         > test@1.0.0 prettier
-        > prettier --write test "*.js" --check --write
+        > prettier --write  "src/**/*.{js,ts}" --check --write
         
         Checking formatting...
         All matched files use Prettier code style!
