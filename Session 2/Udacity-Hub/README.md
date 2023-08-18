@@ -177,9 +177,8 @@
         Checking formatting...
         All matched files use Prettier code style!
         ```
-  ## 8 🌏 Resources
+  ## 8 🌏 More about this 
    - <a href="https://blog.logrocket.com/using-prettier-eslint-automate-formatting-fixing-javascript/"> logrocket 🔥</a>
-   - <a href="https://noidejs.org/"> nodejs ⚡</a>
    
 
   
