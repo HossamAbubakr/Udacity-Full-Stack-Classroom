@@ -3,8 +3,11 @@
  <img src="https://raw.githubusercontent.com/codarme/stylelint/HEAD/logo.png" width="600"/>
 <h1> Eslint and Prettier and Typescript config Step by Step </h1>
  
-![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/%40babel/core?style=falt&logo=eslint&logoColor=purple&label=eslint&labelColor=white&color=purple)
-![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/%40babel/core?style=plastic&logo=prettier&logoColor=red&label=prettier&labelColor=black&color=purple&link=https%3A%2F%2Fprettier.org)
+![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/badge/eslint-3A33D1?style=flat&logo=eslint&logoColor=white)
+![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/badge/prettier-1A2C34?style=flat&logo=prettier&logoColor=F7BA3E)
+![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)
+![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/badge/NPM-black?style=flat&logo=npm&logoColor=white)
+
 </div>
 
 ## 1  🎨 installation Nodejs
@@ -17,9 +20,9 @@
 - 1.2 mac or linux ( Terminal )
 
   - ```bash
-       brew update && brew upgrade node
+       brew install && brew upgrade node
        # or linux
-       sudo apt-get update && upgrade node
+       sudo apt-get install && upgrade node
      ```
 
 ## 2  🎇 how to initial npm package
@@ -57,11 +60,7 @@
         echo  "" > .prettierrc
         ```
 
-  - to test prettier open `terminal/cmd` were `package.json` is
-
-    - ```cmd
-        npm run prettier
-        ```
+ 
 
 - 3.3 🚑 Add this config of your `.prettierrc` file
 
@@ -82,6 +81,11 @@
        "prettier":"prettier --write \"src/**/*.{js,ts}\" --check"
         },
      ```
+- 3.5 🧪 to test prettier open `terminal/cmd` were `package.json` is
+
+   - ```cmd
+        npm run prettier
+        ```
 
 ## 4 🔥 Installation config for eslint and prettier with typescript
 
