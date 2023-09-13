@@ -8,9 +8,9 @@ We learned how to set up our TypeScript configuration file and prepare our proje
 
 We then added eslint and prettier to our project and learned how to connect them together to work with a single script.
 
-We finally learned how to configure eslint and prettier with our custom rules.
+We finally learned how to configure eslint and prettier with our custom rule, if you forget **how to config eslint and prettier** just follow this tutorial <a href="./config-prettier-eslint.md"> here</a>.
 
-For this week's bonus content we learned about backend development essentials!
+For this week's bonus content, we learned about backend development essentials!
 
 ## ✍️ Quiz
 - [Session 2 Quiz](https://forms.gle/4Xhwk9xVSJjk4MsS7)
